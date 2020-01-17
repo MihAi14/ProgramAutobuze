@@ -6,7 +6,7 @@ function initMap() {
 
   var iconBase =
       'https://developers.google.com/maps/documentation/javascript/examples/full/images/';
-
+var iconURL= 'https://raw.githubusercontent.com/MihAi14/ProgramAutobuze/master/statie.png';
 
   var icons = {
     parking: {
@@ -18,9 +18,10 @@ function initMap() {
     info: {
       icon: iconBase + 'info-i_maps.png'
     },
-	//statie: {
-	//	icon: 
-	
+	statie: {
+      icon: iconURL
+    },
+
   };
 
 /* trebuie asta singura
@@ -69,7 +70,7 @@ function initMap() {
   var features = [
     {
       position: new google.maps.LatLng(45.151960, 26.818134),
-      type: 'info'
+      type: 'statie'
     }, {
       position: new google.maps.LatLng(-33.916988, 151.233640),
       type: 'info'
