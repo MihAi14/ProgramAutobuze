@@ -2,11 +2,19 @@ var map;
 function initMap() {
   map = new google.maps.Map(
       document.getElementById('map'),
-      {center: new google.maps.LatLng(45.151927, 26.817708), zoom: 16});
+        {
+          center: new google.maps.LatLng(45.151927, 26.817708), 
+          zoom: 16,
+          disableDefaultUI: true
+        },
+      );
 
-  var iconBase =
-      'https://developers.google.com/maps/documentation/javascript/examples/full/images/';
-var iconURL= 'https://raw.githubusercontent.com/MihAi14/ProgramAutobuze/master/statie.png';
+	  
+	  
+	  
+  var iconBase = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/';
+  
+  var iconURL= 'https://raw.githubusercontent.com/MihAi14/ProgramAutobuze/master/statie.png';
 
   var icons = {
     parking: {
