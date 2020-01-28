@@ -5,13 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
 
   <body>
     
-    
-    
+    <div class="topnav">
+		<a style="font-family:arial;" href="#home" class="active">Programul Autobuzelor</a>
+		<div id="myLinks">
+		<a style="font-family:arial;" href="#linia1">Linia 1</a>
+		<a style="font-family:arial;" href="#linia2">Linia 2</a>
+		<a style="font-family:arial;" href="#linia3">Linia 3</a>
+		<a style="font-family:arial;" href="#linia4">Linia 4 </a>
+		<a style="font-family:arial;" href="#linia5">Linia 5</a>
+		<a style="font-family:arial;" href="#linia6">Linia 6</a>
+		<a style="font-family:arial;" href="#linia7">Linia 7</a>
+		<a style="font-family:arial;" href="#linia8">Linia 8</a>
+		<a style="font-family:arial;" href="#linia9">Linia 9</a>
+		<a style="font-family:arial;" href="#linia10">Linia 10</a>
+		<a style="font-family:arial;" href="#linia11">Linia 11</a>
+  </div>
+     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+
     <script src="test.js"></script>
     <div id="map"></div>
 
